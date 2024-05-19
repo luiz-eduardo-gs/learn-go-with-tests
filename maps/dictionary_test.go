@@ -25,7 +25,7 @@ func TestAdd(t *testing.T) {
 		word := "test"
 		def := "this is just a test"
 
-		d.Add(word, def)
+		_ = d.Add(word, def)
 
 		assertDefinition(t, d, word, def)
 	})
@@ -48,7 +48,7 @@ func TestUpdate(t *testing.T) {
 
 		d := Dictionary{word: def}
 		newDef := "def updated"
-		d.Update(word, newDef)
+		_ = d.Update(word, newDef)
 
 		assertDefinition(t, d, word, newDef)
 	})
