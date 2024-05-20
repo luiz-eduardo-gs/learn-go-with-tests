@@ -13,6 +13,7 @@ func TestPerimeter(t *testing.T) {
 }
 
 func TestArea(t *testing.T) {
+	// table driven test
 	areaTests := []struct {
 		name    string
 		shape   Shape

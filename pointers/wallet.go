@@ -7,6 +7,14 @@ import (
 
 type Bitcoin int
 
+/*
+	type Stringer interface {
+		String() string
+	}
+
+this interface is defined in the 'fmt' package and lets you define how your type is printed
+when used with the '%s' format string in prints
+*/
 func (b Bitcoin) String() string {
 	return fmt.Sprintf("%d BTC", b)
 }
